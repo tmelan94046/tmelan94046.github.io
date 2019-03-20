@@ -38,7 +38,7 @@
        ************************************************************/
       var webmap = new WebMap({
         portalItem: { // autocasts as new PortalItem()
-          id: "f2e9b762544945f390ca4ac3671cfa72"
+          id: "6138d3d926a3483fb59c5db62b89bef4"
         }
       });
 
