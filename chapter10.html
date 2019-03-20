@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>Load a basic WebMap - 4.10</title>
-
   <style>
     html,
     body,
@@ -15,11 +14,8 @@
       width: 100%;
     }
   </style>
-
   <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
-
   <script src="https://js.arcgis.com/4.10/"></script>
-
   <script>
     require([
       "esri/views/MapView",
@@ -27,7 +23,6 @@
     ], function(
       MapView, WebMap
     ) {
-
       /************************************************************
        * Creates a new WebMap instance. A WebMap must reference
        * a PortalItem ID that represents a WebMap saved to
@@ -41,7 +36,6 @@
           id: "766ea3302fed44998eb7405a2b083291"
         }
       });
-
       /************************************************************
        * Set the WebMap instance to the map property in a MapView.
        ************************************************************/
@@ -52,9 +46,7 @@
     });
   </script>
 </head>
-
 <body>
   <div id="viewDiv"></div>
 </body>
-
 </html>
