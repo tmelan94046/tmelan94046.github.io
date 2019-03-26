@@ -11,9 +11,10 @@ polygon.bindPopup('A polygon')
 marker.bindPopup('A marker')
 // create a red polyline from an array of LatLng points
 var latlngs = [
-    [45.51, -122.68],
-    [37.77, -122.43],
-    [34.04, -118.2]
+    [30.437070, -91.1858988],
+    [30.418114, -91.176566],
+    [30.409042, -91.176046],
+    [30.410637, -91.183431]
 ];
 var polyline = L.polyline(latlngs, {color: 'red'}).addTo(myMap);
 // zoom the map to the polylin
