@@ -15,6 +15,6 @@ var latlngs = [
     [37.77, -122.43],
     [34.04, -118.2]
 ];
-var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
-// zoom the map to the polyline
+var polyline = L.polyline(latlngs, {color: 'red'}).addTo(myMap);
+// zoom the map to the polylin
 map.fitBounds(polyline.getBounds());
