@@ -9,3 +9,7 @@ let polygon=L.polygon([
 ]).addTo(myMap)
 polygon.bindPopup('A polygon')
 marker.bindPopup('A marker')
+var latlngs = [
+    [45.51, -122.68],
+    [37.77, -122.43],
+    [34.04, -118.2]
