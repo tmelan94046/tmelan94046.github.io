@@ -1,5 +1,5 @@
 let myMap = L.map('TecheMap2').setView([32.18, -99.14], 4)
-L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png').addTo(myMap)
+L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png').addTo(myMap)
 L.tileLayer.wms('http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi', {
   layers: 'nexrad-n0r-900913',
   format: 'image/png',
