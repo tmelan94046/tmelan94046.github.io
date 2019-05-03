@@ -4,9 +4,9 @@ let facilitylocations = 'https://opendata.arcgis.com/datasets/f14b547d30124f3782
 
 jQuery.getJSON(facilitylocations, function (data) {
   let facilitystyle = function (feature) {
-    let Agency = feature.properties. AGENCY // agency of the public facility
+    let Agency = feature.properties.AGENCY // agency of the public facility
     let facilitycolor = 'blue' // let the initial color be a darker green
-    if ( Agency == DEPARTMENT OF ENVIRONMENTAL SERVICES ) { facilitycolor = 'green' }
+
     return {
       color: facilitycolor, //use the color variable above for the value
       weight: 1,
@@ -23,7 +23,7 @@ jQuery.getJSON(facilitylocations, function (data) {
 })
 
 let createpopup = function (feature, layer) {
-  let name = feature.properties.STATE_NAME
-  let age = feature.properties.MED_AGE
-  layer.bindPopup('Median age of ' + name + ': ' + age + '<br>National average: 38')
+  let name = feature.properties.DESCRIPTION
+  let agency = feature.properties.AGENCY
+
 }
