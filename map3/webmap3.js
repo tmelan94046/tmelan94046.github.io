@@ -20,9 +20,6 @@ onEachFeature: onEachFeature
 }
 L.geoJSON(data, stateGeojsonOptions).addTo(stateMap)
 let onEachFeature = function (feature, layer) {
-   // contents of the function
-}
-let onEachFeature = function (feature, layer) {
   let name = feature.properties.STATE_NAME
   let age = feature.properties.MED_AGE
   layer.bindPopup('Median age of ' + name + ': ' + age + '<br>National average: 38')
