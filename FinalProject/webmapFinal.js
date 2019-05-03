@@ -14,14 +14,14 @@ let createCircles = function (feature, latlng) {
   let facilitycolor = 'blue' // let the initial color be a blue
   //console.log('test')
   if ( agency == 'DEPARTMENT OF ENVIRONMENTAL SERVICES' ) { facilitycolor = 'green' }
-  if ( agency == 'DEPARTMENT OF BUILDINGS AND GROUNDS' ) { facilitycolor = 'brown' }
-  if ( agency == 'DEPARTMENT OF DEVELOPMENT' ) { facilitycolor = 'yellow' }
+  if ( agency == 'DEPARTMENT OF BUILDINGS AND GROUNDS' ) { facilitycolor = 'red' }
+  if ( agency == 'DEPARTMENT OF DEVELOPMENT' ) { facilitycolor = 'purple' }
   if ( agency == 'DEPARTMENT OF FLEET MANAGEMENT' ) { facilitycolor = 'blue' }
-  if ( agency == 'DEPARTMENT OF MAINTENANCE' ) { facilitycolor = 'orange' }
-  if ( agency == 'DEPARTMENT OF TRANSPORTATION AND DRAINAGE' ) { facilitycolor = 'purple' }
+  if ( agency == 'DEPARTMENT OF MAINTENANCE' ) { facilitycolor = 'black' }
+  if ( agency == 'DEPARTMENT OF TRANSPORTATION AND DRAINAGE' ) { facilitycolor = 'yellow' }
   let facilitystyle = {
     color: facilitycolor, //use the color variable above for the value
-    weight: 1,
+    weight: 2,
     fillOpacity: 0.2
   }
   return L.circleMarker(latlng, facilitystyle)
